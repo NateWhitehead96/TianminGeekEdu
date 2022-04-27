@@ -8,6 +8,8 @@ public class PlayerMove : MonoBehaviour
     public SpriteRenderer sprite; // access to flipping our sprite left and right
     public float xBounds; // how far left and right we can go
     public float yBounds; // how high or low we can go
+
+    public bool hasQuestItem; // this will know if the player owns the quest item
     // Start is called before the first frame update
     void Start()
     {
