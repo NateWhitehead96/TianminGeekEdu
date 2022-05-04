@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WizardHouse.unity
     guid: 00e72f658f3d07c41a7f1052a9a8f250
+  - enabled: 1
+    path: Assets/Scenes/OtherDimension.unity
+    guid: 695e40631d39a164ca0192a075d5cc75
   m_configObjects: {}

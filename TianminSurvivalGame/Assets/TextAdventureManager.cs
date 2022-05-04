@@ -29,6 +29,9 @@ public class TextAdventureManager : MonoBehaviour
     public GameObject NoButton;
 
     public bool madeDecision; // know whether we made a decision or not
+
+    public int nextLevelYes; // the level to load when we hit yes
+    public int nextLevelNo; // the level to load when we hit no
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +66,7 @@ public class TextAdventureManager : MonoBehaviour
             sentenceCount++;
             if(sentenceCount >= YesSentences.Length)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(nextLevelYes);
             }
         }
         if(decision == Decision.no)
@@ -72,7 +75,7 @@ public class TextAdventureManager : MonoBehaviour
             sentenceCount++;
             if (sentenceCount >= NoSentences.Length)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(nextLevelNo);
             }
         }
         //if(sentenceCount >= introSentenceCount) // we've run out of intro dialogue, display the yes or no

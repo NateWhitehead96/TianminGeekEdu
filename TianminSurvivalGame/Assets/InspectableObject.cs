@@ -28,6 +28,7 @@ public class InspectableObject : MonoBehaviour
             {
                 displayText.gameObject.SetActive(true);
                 displayText.text = "You have found the underpants. Go return them to the wizard.";
+                FindObjectOfType<PlayerMove>().hasQuestItem = true; // now the player has obtained the quest item
             }
             if(hasQuestItem == false)
             {
