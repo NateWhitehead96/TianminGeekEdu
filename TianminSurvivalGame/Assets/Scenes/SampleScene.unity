@@ -3032,8 +3032,8 @@ MonoBehaviour:
   YesButton: {fileID: 1256752686}
   NoButton: {fileID: 2095932289}
   madeDecision: 0
-  nextLevelYes: 1
-  nextLevelNo: 2
+  nextLevelYes: 2
+  nextLevelNo: 3
 --- !u!114 &1065327562
 MonoBehaviour:
   m_ObjectHideFlags: 0

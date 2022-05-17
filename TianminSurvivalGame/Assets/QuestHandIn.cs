@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuestHandIn : MonoBehaviour
 {
@@ -46,5 +47,10 @@ public class QuestHandIn : MonoBehaviour
         {
             displayText.gameObject.SetActive(false); // hide the text
         }
+    }
+
+    public void OpenLastScene()
+    {
+        SceneManager.LoadScene("FinalScene"); // open up the last scene
     }
 }
